@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: learn-nacos #服务名 配置中心 dataId:${prefix}-${spring.profiles.active}.${file-extension}
+  cloud:
+    nacos:
+      config:
+        server-addr: 47.104.176.206:8848 #nacos 服务地址
+        file-extension: yaml  #nacos 配置中心文件扩展名
+
+#测试数据
+config:
+  useLocalCache: true
